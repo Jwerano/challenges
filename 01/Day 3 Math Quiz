@@ -1,0 +1,11 @@
+import random
+from random import randint
+
+chance = randint(1,10)
+
+if chance >=5:
+ math_operator = random.choice(['+','-',"*","/","//","%","divmod","**"])
+ print("Create a math expression that uses the {} operator.".format(math_operator))
+else:
+ math_operator_names = random.choice(['addition',"subtraction","multiplication","division","floor division","modulo","exponentiation"])
+ print("Create a math expression that uses the {} operator.".format(math_operator_names))
